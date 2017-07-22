@@ -12,7 +12,7 @@ void __assert_fail(const char *assertion, const char *file,
                    unsigned int line, const char *function)
 {
     /* Print the message.  */
-    fprintf(stderr, "%s:%u: %s: Assertion `%s' failed.\n",
+    fprintf(stderr, "MYSTD => %s:%u: %s: Assertion `%s` failed.\n",
             file, line, function, assertion);
     fflush(stderr);
 
